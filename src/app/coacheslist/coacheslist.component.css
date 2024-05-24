@@ -1,0 +1,136 @@
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+  }
+  
+  .sidebar h2,
+  .sidebar p {
+    color: white;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px;
+  }
+  
+  nav ul li {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #333;
+  }
+  
+  .profile-icon {
+    color: white;
+    margin-left: 70px;
+    padding: 20px;
+    width: 100px;
+  }
+  
+  .container {
+    display: flex;
+  }
+
+  .member-list {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 70%;
+    margin-left: 300px;
+    border-radius: 10px;
+    margin-top: 0px;
+  }
+  
+  .member-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .member-list th,
+  .member-list td {
+    padding: 10px;
+    text-align: left;
+    
+  }
+  
+  .member-list th {
+    background-color: #555;
+    color: bisque;
+  }
+  
+  .member-list tr:hover {
+    background-color: #555;
+  }
+  
+  .member-list td.actions {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .l{
+    background-color:#F5F5F5;
+  }
+  .registration-form {
+    width: 60%;
+    flex-direction: column;
+    height: 270px;
+    margin-top: 40px; /* Center the form horizontally */
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 400px;
+}
+
+.registration-form h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.registration-form label {
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="number"],
+.registration-form input[type="password"],
+.registration-form select {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    margin-bottom: 20px;
+    padding: 10px; /* Adjust padding as needed */
+    font-size: 16px;
+    margin-right: 30px;
+}
+
+.registration-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10*40px;
+    margin-left: 450px;
+    height: 40px;
+}
+
+.registration-form button:hover {
+    background-color: #555;
+}

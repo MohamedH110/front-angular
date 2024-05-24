@@ -1,0 +1,91 @@
+
+    <title>Gym WebSite</title>
+
+
+    <nav class="navbar">
+        <!-- Logo -->
+        <a href="#" class="navbar__logo">Logo</a>
+        
+        <!-- Navigation Links -->
+        <ul class="navbar__links">
+            <li><a href="" class="navbar__link">Home</a></li>
+            <li><a href="/aboutus" class="navbar__link">About</a></li>
+            <li><a href="ourclasses" class="navbar__link">Classes</a></li>
+            <li><a href="/contactus" class="navbar__link">Contact</a></li>
+        </ul>    
+    </nav>
+
+
+
+    <div class="forms-container">
+      <div class="registration-form">
+        <h3>REGISTRATION FORM           </h3>
+        <form #memberForm="ngForm" (ngSubmit)="addMember(memberForm.value)">
+          <label>First Name:</label>
+          <input type="text" name="first_name" ngModel required>
+    
+          <label>Last Name:</label>
+          <input type="text" name="last_name" ngModel required>
+    
+          <label>Email:</label>
+          <input type="text" name="email" ngModel required>
+    
+          <label>Age:</label>
+          <input type="number" name="age" ngModel required>
+
+          <label>Password:</label>
+          <input type="password" name="password" ngModel required>
+    
+          <label>Sport:</label>
+          <select name="sport" ngModel required>
+            <option value="">Select Sport</option>
+            <option value="Football">Football</option>
+            <option value="Basketball">Basketball</option>
+            <option value="Tennis">Tennis</option>
+          </select>
+          <select name="coach_id" [(ngModel)]="selectedCoach" required>
+            <option *ngFor="let coach of coaches" [value]="coach.id">{{ coach.first_name }} {{ coach.last_name }}</option>
+          </select>
+          
+          
+          
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    
+      <div class="login-form">
+        <h3>ALREADY HAVE AN ACCOUNT?</h3>
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)" >
+          <label>Email:</label>
+          <input type="text" name="email" ngModel required>
+    
+          <label>Password:</label>
+          <input type="password" name="password" ngModel required>
+    
+          <button type="submit">Log In</button>
+        </form>
+      </div>
+    </div>
+    
+    <footer>
+      <div class="footer-contact">
+          <h3>GET IN TOUCH</h3>
+          <p>123 Street, NABEUL, TUNISIA</p>
+          <p>gymmail.com</p>
+          <p>+012 345 67890</p>
+      </div>
+      <div class="footer-links">
+          <h3>QUICK LINKS</h3>
+          <ul>
+              <li><a href="/aboutus">ABOUT US</a></li>
+              <li><a href="/ourclasses">CLASS SCHEDULE</a></li>
+              <li><a href="/contactus">CONTACT US</a></li>
+          </ul>
+      </div>
+      <div>
+          <img src="/assets/images/R.jpg" class="o">
+
+      </div>
+  </footer>
+  
+  

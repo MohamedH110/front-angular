@@ -1,0 +1,145 @@
+.navbar {
+    background-color: #292828;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the logo */
+.navbar__logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Style for the navigation links */
+.navbar__links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar__link {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/* Style for the Join Us button */
+.join-us-btn {
+    background-color: #0B851E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.classes-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+}
+
+.class-box {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    border: 1px solid #fff; /* Add border or any other styling you prefer */
+    box-sizing: border-box;
+    background-color: #292828;
+}
+
+.class-box h2 {
+    font-size: 24px;
+    color: green;
+    text-align: center;
+}
+
+.class-box p {
+    font-size: 16px;
+}
+
+.c{
+    color: green;
+    text-align: center;
+    font-size: 52px;
+    padding: 70px;
+}
+.schedule-table {
+    width: 70%;
+    border-collapse: collapse;
+    background-color: #292828;
+    color: white;
+    margin-left: 220px;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid white; /* all borders inside and outside white */
+    padding: 10px;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: #292828;
+    color: white;
+}
+
+.schedule-table td {
+    background-color: #292828;
+}
+footer {
+    background-color: #292828;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 120px;
+}
+
+.footer-contact, .footer-links {
+    flex: 1;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+.o{
+    width: 450px;
+    height: 250px;
+}
+.footer-contact  h3{
+    color: #0B851E;
+}
+.footer-links h3{
+    color: #0B851E;
+}
+.c{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 50px;
+    margin-top: 70px;
+}
+.l{
+    background-color: #292828;
+}

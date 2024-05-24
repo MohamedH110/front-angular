@@ -1,0 +1,168 @@
+/* Style for the navigation bar */
+.navbar {
+    background-color: #292828;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the logo */
+.navbar__logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Style for the navigation links */
+.navbar__links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar__link {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/* Style for the Join Us button */
+.join-us-btn {
+    background-color: #0B851E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+footer {
+    background-color: #292828;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 120px;
+}
+
+.footer-contact, .footer-links {
+    flex: 1;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+.o{
+    width: 450px;
+    height: 250px;
+}
+.footer-contact  h3{
+    color: #0B851E;
+}
+.footer-links h3{
+    color: #0B851E;
+}
+.m{
+    color: #0B851E;
+    text-align: center;
+    font-size: 35px;
+}
+.n{
+    background-color: #292828;
+    padding: 70px;
+    margin-top: 70px;
+}
+
+.a{
+    color: aliceblue;
+    font-size: 25px;
+    text-align: center;
+}
+.l{
+    background-color: #292828;
+}
+
+.contact-info {
+    padding: 20px;
+    margin-top: 70px;
+  }
+
+.contact-info h3{
+    text-align: center;
+    color: #0B851E;
+    font-size: 30px;
+}
+  
+  .contact-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-item {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .card {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .card .details h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .card a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .card p {
+    margin: 5px 0;
+  }
+  
+ .q{
+    text-align: center;
+    color: #0B851E;
+    font-size: 30px;
+ } 
+
+ .x{
+    width: 1100px;
+    margin-left: 150px;
+    height: 300px;
+ }
+
+ .j{
+    padding: 20px;
+    margin-top: 100px;
+ }

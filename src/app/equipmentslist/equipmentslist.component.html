@@ -1,0 +1,75 @@
+<div class="l">
+    <div class="container">
+      <div class="sidebar">
+        <div class="profile">
+          <i class="fas fa-user-circle fa-3x profile-icon"></i> 
+          <h2>Administrator Name</h2>
+          <p>administaratorgmail.com</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/admindashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="/adminprofile"><i class="fas fa-user"></i> Admin Profile</a></li>
+            <li><a href="/memberlist"><i class="fas fa-users"></i> Members</a></li>
+            <li><a href="/coacheslist"><i class="fas fa-users"></i> Coaches</a></li>
+            <li><a href="/equipmentlist"><i class="fas fa-cube"></i> Inventory</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  
+    <div class="member-list">
+      <h2>Equipment List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Availability</th>
+            <th>Weight</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let equipment of equipments">
+            <td>{{ equipment.number }}</td>
+            <td>{{ equipment.name }}</td>
+            <td>{{ equipment.category }}</td>
+            <td>{{ equipment.availability }}</td>
+            <td>{{ equipment.weight }}</td>
+            <td class="actions">
+              <i class="fas fa-edit"></i>
+              <i class="fas fa-trash-alt" (click)="deleteEquipment(equipment.number)"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="registration-form">
+      <h3>REGISTRATION FORM</h3>
+      <form #equipmentForm="ngForm" (ngSubmit)="addEquipment(equipmentForm.value)">
+        <label>Name:</label>
+        <input type="text" name="name" ngModel required>
+  
+        <label>Category:</label>
+        <input type="text" name="category" ngModel required>
+         <br>
+        <label>Availability:</label>
+        <input type="text" name="availability" ngModel required>
+  
+        <label>Weight:</label>
+        <input type="number" name="weight" ngModel required>
+        <br>
+        <label>Coach:</label>
+         <select name="coach" ngModel>
+              <option *ngFor="let coach of coaches" [ngValue]="coach.id">{{ coach.first_name }} {{ coach.last_name }}</option>
+        </select>
+
+  
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+  

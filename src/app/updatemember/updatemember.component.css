@@ -1,0 +1,165 @@
+.navbar {
+    background-color: #292828;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the logo */
+.navbar__logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Style for the navigation links */
+.navbar__links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar__link {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+footer {
+    background-color: #292828;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 120px;
+}
+
+.footer-contact, .footer-links {
+    flex: 1;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+.o{
+    width: 450px;
+    height: 250px;
+}
+.footer-contact  h3{
+    color: #0B851E;
+}
+.footer-links h3{
+    color: #0B851E;
+}
+
+.form-container {
+    
+    justify-content: space-around;
+    background-image: url('/assets/images/R.jpg');
+    padding: 50px;
+  }
+  
+  .form-container form {
+    background-color: #292828;
+    padding: 20px;
+    max-width: 500px;
+    height: 500px;
+    margin-left: 100px;
+  }
+  
+  .form-container form h2 {
+    color: darkgreen;
+    font-size: 24px;
+  }
+  
+  .form-container form label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .form-container form input[type="text"],
+  .form-container form input[type="number"],
+  .form-container form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .form-container form button[type="submit"] {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-container form button[type="submit"]:hover {
+    background-color: darkgreen;
+  }
+  .form-container h2{
+    color: aliceblue;
+    font-size: 40px;
+    margin-left: 120px;
+  }
+  
+  .schedule-table {
+    width: 70%;
+    border-collapse: collapse;
+    background-color: #292828;
+    color: white;
+    margin-left: 220px;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid white; /* all borders inside and outside white */
+    padding: 10px;
+    text-align: center;
+}
+
+.schedule-table th {
+    background-color: #292828;
+    color: white;
+}
+
+.schedule-table td {
+    background-color: #292828;
+}
+.k{
+    text-align: center;
+
+}
+.j{
+    text-align: center;
+    color: green;
+    font-size: 52px;
+}
+.schedule-table th, .schedule-table td {
+    border: 1px solid white; /* all borders inside and outside white */
+    padding: 15px; /* increased padding for larger cells */
+    text-align: center;
+}

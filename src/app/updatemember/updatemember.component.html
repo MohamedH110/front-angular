@@ -1,0 +1,124 @@
+<title>Gym WebSite</title>
+
+
+<nav class="navbar">
+    <!-- Logo -->
+    <a href="#" class="navbar__logo">Logo</a>
+    
+    <!-- Navigation Links -->
+    <ul class="navbar__links">
+        <li><a href="" class="navbar__link">Home</a></li>
+        <li><a href="/aboutus" class="navbar__link">About</a></li>
+        <li><a href="ourclasses" class="navbar__link">Classes</a></li>
+        <li><a href="/contactus" class="navbar__link">Contact</a></li>
+    </ul>    
+</nav>
+
+
+
+
+
+
+
+<div *ngIf="member" class="form-container">
+  <h2>Welcome To Our Gym</h2>
+    <form #updateForm="ngForm" (ngSubmit)="updateMember()" >
+      
+      <div>
+        <label>First Name:</label>
+        <input type="text" [(ngModel)]="member.first_name" name="first_name" required>
+      </div>
+      <div>
+        <label>Last Name:</label>
+        <input type="text" [(ngModel)]="member.last_name" name="last_name" required>
+      </div>
+      <div>
+        <label>Email:</label>
+        <input type="email" [(ngModel)]="member.email" name="email" required>
+      </div>
+      <div>
+        <label>Age:</label>
+        <input type="number" [(ngModel)]="member.age" name="age" required>
+      </div>
+      <div>
+        <label>Sport:</label>
+        <input type="text" [(ngModel)]="member.sport" name="sport" required>
+      </div>
+      <div>
+        <button type="submit" [disabled]="!updateForm.valid">Update</button>
+      </div>
+      
+    </form>
+  </div>
+  
+
+
+
+
+
+  <div style="padding:70px">
+    <h1 class="k">YOUR TRAINING SCHEDULE</h1>
+</div>
+
+
+    <table class="schedule-table" border="1">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>THURSDAY</th>
+                <th>FRIDAY</th>
+                <th>SATURDAY</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>8.00AM - 10.00AM</td>
+                <td>POWER LIFTING</td><td>WEIGHT LOOSE</td><td></td><td>CARDIO PROGRAM</td><td>YOGA CLASS</td><td>CROSSFIT CLASS</td>
+            </tr>
+            <tr>
+                <td>10.00AM - 12.00PM</td>
+                <td>BODY BUILDING</td><td>YOGA CLASS</td><td>YOGA CLASS</td><td></td><td>CARDIO PROGRAM</td><td></td>
+            </tr>
+            <tr>
+                <td>12.00PM - 13.00PM</td>
+                <td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>    
+                <td>13.00PM - 15.00PM</td>   
+                <td></td><td></td><td>MUSCLE BUILDING</td><td>WEIGHT LOOSE</td><td>CROSSFIT CLASS</td><td>WEIGHT LOOSE</td>
+            </tr>
+
+            <tr>
+                <td>15.00PM - 17.00PM</td>
+                <td>CARDIO PROGRAM</td><td></td><td>MUSCLE BUILDING</td><td></td><td>CROSSFIT CLASS</td><td></td>
+            </tr>
+           
+        </tbody>
+    </table>
+
+
+
+  <footer>
+    <div class="footer-contact">
+        <h3>GET IN TOUCH</h3>
+        <p>123 Street, NABEUL, TUNISIA</p>
+        <p>gymmail.com</p>
+        <p>+012 345 67890</p>
+    </div>
+    <div class="footer-links">
+        <h3>QUICK LINKS</h3>
+        <ul>
+            <li><a href="/aboutus">ABOUT US</a></li>
+            <li><a href="/ourclasses">CLASS SCHEDULE</a></li>
+            <li><a href="/contactus">CONTACT US</a></li>
+        </ul>
+    </div>
+    <div>
+        <img src="/assets/images/map.jpg" class="o">
+
+    </div>
+</footer>
+
